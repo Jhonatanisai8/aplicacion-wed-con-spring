@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th:"http://www.thymeleaf.org">
+      <head>
+        <title>Enviaar parametros del requests HTTP GET - URL</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Enviaar parametros del requests HTTP GET - URL</h1>
+
+        <ul>
+            <li><a th:href="@{/params/string(texto = 'Hola Jhonatan')}">/params/string?texto=Hola Jhonatan</a></li>
+            <li><a th:href="@{/params/string(texto = 'que tal')}">/params/string?texto=que tal</a></li>
+        </ul>
+
+    </body>
+
+</html>
