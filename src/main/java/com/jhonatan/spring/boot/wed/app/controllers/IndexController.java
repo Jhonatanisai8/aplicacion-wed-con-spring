@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/app")
 public class IndexController {
 
-    @GetMapping("/index")
+    @GetMapping("/")
     public String index(Model modelo) {
         modelo.addAttribute("titulo", "Hola Spring con Model.");
         return "index";
